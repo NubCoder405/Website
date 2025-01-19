@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Detail Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/watch.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Blog.html">Blog</a>
+        <a href="Aboutus.html">About Us</a>
+        <a href="Contact.html">Contact Us</a>
+        <input type="text" placeholder="Search...">
+        <a href="login.html" class="btn btn-success">Login</a>
+        <a href="signup.html" class="btn btn-success">Sign Up</a>
+    </nav>
+    <div class="nav2"> <!-- Changed from <nav2> to <div class="nav2"> -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/Image/Logo.png" alt="Logo">
+            </a>
+        </div>
+    </div>
+
+  <div class="container py-3">
+    <h1 class="text-center mb-3">Anime Title</h1>
+    <h2 class="episode-title" id="episode-title">Select an Episode</h2>
+
+    <!-- Video Section -->
+    <div class="video-container mb-3">
+      <video id="video-player" controls style="width: 100%; height: auto;">
+      </video>
+    </div>
+
+    <!-- Episode Boxes -->
+    <div class="d-flex flex-wrap justify-content-center mb-5">
+        <div class="episode-box" onclick="playEpisode('Episode 1: The Beginning', 'assets/Video/episode1.mp4')">Ep 1</div>
+        <div class="episode-box" onclick="playEpisode('Episode 2: A New Journey', 'assets/Video/episode2.mp4')">Ep 2</div>
+        <div class="episode-box" onclick="playEpisode('Episode 3: The Challenge', 'assets/Video/episode3.mp4')">Ep 3</div>
+        <div class="episode-box" onclick="playEpisode('Episode 4: Hidden Powers', 'assets/Video/episode4.mp4')">Ep 4</div>
+        <div class="episode-box" onclick="playEpisode('Episode 5: Climax', 'assets/Video/episode5.mp4')">Ep 5</div>
+      </div>
+
+    <!-- Description Section -->
+    <div class="mb-5">
+      <h2>Description</h2>
+      <p>
+        This is where the description of the anime goes. You can include details about the plot, characters, and more.
+        Make this section as detailed as you need to provide viewers with all the relevant information about the anime.
+      </p>
+    </div>
+
+    <!-- Related Content Section -->
+    <div class="mb-5">
+      <h2>Related Content</h2>
+      <div class="row g-4">
+        <!-- Related Anime Card 1 -->
+        <div class="col-md-4">
+          <a href="#" class="text-decoration-none">
+            <div class="card related-card">
+              <img src="assets/Image/tv-1.jpg" alt="Related Anime 1">
+              <div class="card-body">
+                <h5 class="card-title">Related Anime 1</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Related Anime Card 2 -->
+        <div class="col-md-4">
+          <a href="#" class="text-decoration-none">
+            <div class="card related-card">
+              <img src="assets/Image/tv-1.jpg" alt="Related Anime 2">
+              <div class="card-body">
+                <h5 class="card-title">Related Anime 2</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Related Anime Card 3 -->
+        <div class="col-md-4">
+          <a href="#" class="text-decoration-none">
+            <div class="card related-card">
+              <img src="assets/Image/tv-1.jpg" alt="Related Anime 3">
+              <div class="card-body">
+                <h5 class="card-title">Related Anime 3</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comments Section -->
+    <div class="mb-5">
+      <h2>Comments</h2>
+      <div class="comments-section">
+        <p><strong>User1:</strong> This anime is amazing! I loved the storyline.</p>
+        <p><strong>User2:</strong> The animation quality is top-notch!</p>
+        <p><strong>User3:</strong> Can't wait for the next episode!</p>
+        <p><strong>User4:</strong> Definitely one of my favorite anime of the year.</p>
+        <p><strong>User5:</strong> Took way to long for the episode to release :<</p>
+        <p><strong>User6:</strong> Absolute Cinema :3</p>
+      </div>
+      <textarea class="form-control mt-3 mb-3" rows="3" placeholder="Leave a comment"></textarea>
+      <button class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer text-light py-4" style="background-color: rgb(11, 12, 42);">
+    <div class="container">
+        <!-- Scroll to Top Button -->
+        <div class="text-center mt-3">
+            <a href="#top" class="btn btn-success rounded-circle go-to-top">
+                <i class="bi bi-arrow-up text-light"></i> ^
+            </a>
+        </div>
+        <div class="row align-items-center">
+            <!-- Logo Section -->
+            <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
+                <a href="index.html" class="text-light text-decoration-none fs-4">
+                    <img src="assets/Image/Logo.png" alt="Logo" class="footer-logo">
+                </a>
+            </div>
+            
+            <!-- Navigation Links -->
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+                <a href="index.html" class="text-light text-decoration-none mx-2">Homepage</a>
+                <a href="blog.html" class="text-light text-decoration-none mx-2">Our Blog</a>
+                <a href="contact.html" class="text-light text-decoration-none mx-2">Contacts</a>
+            </div>
+            
+            <!-- Copyright and Credits -->
+            <div class="col-md-4 text-md-end text-center">
+              <p class="mb-0 text-white">&copy; <script>document.write(new Date().getFullYear());</script> All rights reserved.</p>
+          </div>
+          
+        </div>
+
+    </div>
+</footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/watch.js"></script>
+
+</body>
+</html>
